@@ -163,4 +163,4 @@ roi-blink-overlay/
 
 ## License
 
-MIT — see [LICENSE](LICENSE). © 2026 Filip Tomaska.
+MIT — see [LICENSE](LICENSE). © 2026 SLAB.
