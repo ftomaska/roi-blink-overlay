@@ -27,6 +27,9 @@ Convolves each neuron's spike train with a GECI calcium kernel and renders an MP
 
 ![demo_roi_blink](https://github.com/user-attachments/assets/3b00825a-be21-4ace-9f86-ce9bbff6c985)
 
+## Extended Directors Cut Demo
+
+https://youtu.be/my1CE9sn2FQ
 
 ## Example output movie
 
