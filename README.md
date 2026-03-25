@@ -6,6 +6,7 @@ Convolves each neuron's spike train with a GECI calcium kernel and renders an MP
 
 ---
 
+
 ## Features
 
 - **One-click folder loading** — point to a Suite2p output folder, all files detected automatically
@@ -17,6 +18,12 @@ Convolves each neuron's spike train with a GECI calcium kernel and renders an MP
 - **GECI kernel** — tunable τ rise / τ decay for any indicator (GCaMP6f, GCaMP6s, jGCaMP8, etc.)
 - **Colour modes** — single colour or unique HSV per ROI
 - **macOS / Windows / Linux**
+
+## GUI
+
+<img width="1512" height="982" alt="screenshot" src="https://github.com/user-attachments/assets/e2590bf5-5fd7-47f2-b9c6-6e0d68aefb50" />
+
+
 
 ---
 
