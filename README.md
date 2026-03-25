@@ -19,11 +19,24 @@ Convolves each neuron's spike train with a GECI calcium kernel and renders an MP
 - **Colour modes** — single colour or unique HSV per ROI
 - **macOS / Windows / Linux**
 
-## GUI
+## GUI screenshot
 
 <img width="1512" height="982" alt="screenshot" src="https://github.com/user-attachments/assets/e2590bf5-5fd7-47f2-b9c6-6e0d68aefb50" />
 
+## Basic Demo
 
+![demo_roi_blink](https://github.com/user-attachments/assets/3b00825a-be21-4ace-9f86-ce9bbff6c985)
+
+
+## Example output movie
+
+
+https://github.com/user-attachments/assets/4a273e0e-ce6f-41f9-8b3b-ce99fdd04862
+
+
+
+Che-Hang Yu, Yiyi Yu, Joseph S. Canzano, Yuandong Fei, Filip Tomaska, and Spencer LaVere Smith, "Non-inertial scan angle multiplier for expanded fields-of-view," Optica 13, 409-423 (2026)
+https://doi.org/10.1364/OPTICA.570761
 
 ---
 
