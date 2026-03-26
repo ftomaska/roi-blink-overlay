@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented here.
 
+## [1.0.1] — 2026-03-25
+
+### Fixed
+- Mean image not refreshing when loading a second dataset — overlays were
+  applied to the wrong background (reported by @klensj.bsky.social)
+- All state (mean image, stat, iscell, ops, spiketimes) now fully reset when
+  a new folder is loaded, so nothing from a previous session can bleed through
+
 ## [1.0.0] — 2026-03-25 — Initial release
 
 ### Python GUI
@@ -25,16 +33,15 @@ All notable changes to this project will be documented here.
 
 **Render**
 - Background thread with progress bar and Cancel button
-- Vectorised per-frame blending (`O(total_pixels)` not `O(n_rois × n_pixels)`)
+- Vectorised per-frame blending
 - GECI difference-of-exponentials kernel, tunable τ rise / τ decay
 
 **Style**
 - Blinky animation during rendering (two-frame alternating at 2 Hz)
-- macOS-compatible: `tk.Label`-based buttons (macOS overrides `tk.Button` bg)
+- macOS-compatible: `tk.Label`-based buttons
 - Dark theme, three-tier button hierarchy (primary / secondary / utility)
 
 ### MATLAB App Designer GUI
 - Loads `Fall.mat` (ops, stat, iscell) + separate spiketimes `.mat`
 - Deep struct search for spiketimes field (3 levels)
 - Per-frame progress dialog with Cancel support
-- Advanced parameters modal (clip %, global scale, quality, tail margin)

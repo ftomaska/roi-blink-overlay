@@ -1211,6 +1211,15 @@ class App(tk.Tk):
           ops.npy, stat.npy, iscell.npy
         Searches the given folder, then one level down (plane0/, plane1/, etc.)
         """
+        # Reset all state so old data never bleeds into a new session
+        self._stat       = None
+        self._iscell     = None
+        self._ops        = None
+        self._spiketimes = None
+        self._mean_im    = None
+        self._mean_disp  = None
+        self._canvas.delete('all')
+
         self._log_msg(f'Scanning folder: {folder}')
         found = {}
 
@@ -1317,7 +1326,7 @@ class App(tk.Tk):
             self._ops = load_ops(path)
             fps = float(self._ops.get('fs', 22.93))
             self._fps_var.set(f'{fps:.3f} Hz')
-            if 'meanImg' in self._ops and self._mean_im is None:
+            if 'meanImg' in self._ops:
                 self._mean_im   = np.array(self._ops['meanImg'], dtype=np.float32)
                 self._mean_disp = self._mean_im.copy()
                 self._refresh_preview()
