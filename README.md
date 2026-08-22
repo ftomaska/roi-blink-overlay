@@ -48,7 +48,7 @@ https://doi.org/10.1364/OPTICA.570761
 ### Python
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/roi-blink-overlay
+git clone https://github.com/ftomaska/roi-blink-overlay
 cd roi-blink-overlay/python
 bash setup_env.sh          # creates conda env 'roi_blink' or a venv
 conda activate roi_blink   # or: source roi_blink/bin/activate
